@@ -1,0 +1,175 @@
+# News App — Initial Design & Implementation Plan
+
+## Objective
+
+Build a production-ready Android News application using modern Android
+development practices.
+
+The application will demonstrate:
+
+- Clean Architecture
+- MVVM
+- Jetpack Compose
+- Kotlin Coroutines + Flow
+- Hilt Dependency Injection
+- Retrofit
+- Room
+- Paging 3
+- WorkManager
+- Navigation Compose
+- Unit Testing
+- UI Testing
+
+---
+
+# Proposed Architecture
+
+The project will follow:
+
+Presentation
+    |
+Domain
+    |
+Data
+
+following Clean Architecture principles.
+
+Each layer depends only on the layer below it.
+
+Presentation
+- Compose Screens
+- ViewModels
+- UiState
+- Navigation
+
+Domain
+- Models
+- Repository interfaces
+- UseCases
+
+Data
+- Retrofit API
+- DTOs
+- Room Database
+- Repository implementation
+- PagingSource
+- Mappers
+
+---
+
+# Feature Breakdown
+
+## Phase 1
+Project setup
+
+- Gradle
+- Version Catalog
+- Hilt
+- Navigation
+- Base architecture
+
+## Phase 2
+Networking
+
+- Retrofit
+- OkHttp
+- NetworkResult
+- Error Handling
+
+## Phase 3
+News Feed
+
+- Paging3
+- Feed Screen
+- Refresh
+- Loading/Error
+
+## Phase 4
+Article Detail
+
+- Detail Screen
+- Share
+- Bookmark
+- Open Browser
+
+## Phase 5
+Search
+
+- Debounced Flow
+- Paging Search
+
+## Phase 6
+Bookmarks
+
+- Room
+- Offline
+
+## Phase 7
+Background Sync
+
+- WorkManager
+
+## Phase 8
+Testing
+
+- Repository Tests
+- ViewModel Tests
+- Compose UI Tests
+
+---
+
+# Design Principles
+
+- Single Responsibility
+- Dependency Inversion
+- Immutable UI State
+- Unidirectional Data Flow (UDF)
+- Testability First
+
+---
+
+# Error Handling
+
+Networking returns:
+
+NetworkResult.Success
+
+NetworkResult.Error
+
+NetworkResult.Loading
+
+Repositories convert network errors into domain-safe results.
+
+---
+
+# State Management
+
+Every screen exposes:
+
+StateFlow<UiState>
+
+No mutable state inside Composables.
+
+---
+
+# Dependency Injection
+
+Hilt modules:
+
+NetworkModule
+
+DatabaseModule
+
+RepositoryModule
+
+DispatcherModule
+
+---
+
+# Future Improvements
+
+- RemoteMediator caching
+- Offline-first architecture
+- Analytics
+- Crash Reporting
+- Feature modules
