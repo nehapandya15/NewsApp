@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+
+    <string name="top_bar_title">Top Headlines</string>
+
+    <string name="no_news_available">No news available</string>
+
+    <string name="news_image">News image</string>
+
+    <string name="load_more_failed">Failed to load more news</string>
+    <string name="article_details">Article</string>
+    <string name="back">Back</string>
+    <string name="source">Source: %1$s</string>
+    <string name="author">By %1$s</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="share">Share</string>
+    <string name="share_article">Share article</string>
+    <string name="open_in_browser">Open in browser</string>
+    <string name="loading">Loading...</string>
+    <string name="error">Something went wrong</string>
+    <string name="retry">Retry</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="failed_to_load_news">Failed to load news</string>
+    <string name="no_articles">No articles available</string>
+    <string name="pull_to_refresh">Please try again later.</string>
+    <string name="search_news">Search news...</string>
+    <string name="searching_articles">Searching articles...</string>
+    <string name="search_failed">Search failed</string>
+    <string name="failed_to_search_articles">Unable to search articles</string>
+    <string name="no_search_results">No articles found</string>
+    <string name="try_different_keywords">Try a different keyword.</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="no_bookmarks">No bookmarks yet</string>
+    <string name="bookmark_articles_hint">
+    Bookmark articles to read them later.
+</string>
+    <string name="home">Home</string>
+</resources>
